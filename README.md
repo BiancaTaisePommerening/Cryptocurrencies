@@ -7,12 +7,17 @@ Unsupervised Machine Learning
 
 ### Results
 
+### Components
+
 ![components](./Resources/components.png)
 
+### Elbow Curve Plot
 ![elbow_curve](./Resources/elbow_curve.png)
 
+### 3D Plot
 ![3D_plot](./Resources/3D_plot.png)
 
+### Scatter Plot
 ![scatter_plot](./Resources/scatter_plot.png)
 
 
