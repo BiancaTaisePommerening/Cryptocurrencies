@@ -3,25 +3,11 @@ Unsupervised Machine Learning
 
 ## Project Overview
 
+Process and analyze a cryptocurrency dataset to fit the unsupervised machine learning model, create a report that includes what cryptocurrencies are on the trading market and how they could be grouped to create a classification system for a new investment in cryptocurrency.
 
 ## Design Solution
 
 Preprocessing the data por PCA
-    - Read the dataset into a dataframe using pandas.
-    - Get the count of fows for each column in the dataframe.
-    - Check the datatypes of the columns
-    - Check for duplicate entries
-    - Set the column that has the abbreviated name of the coins as the new index.
-    - Filter the dataframe to keep only the cryptocurrencies that are being traded.
-    - Filter the dataframe to keep only the cryptocurrencies that have a working algorithm.
-    - Drop the column that checks if the cryptocurrencies are being traded.
-    - Check null values 
-    - Drop the rows that have at least one null value.
-    - Check null values again
-    - Check row counts
-    - Keep the rows where the coins are mined, by filtering the "TotalCoinsMined" Column for vlues greater than 0.
-    - Check the rows count.
-    - 
 
 Reducing Data Dimensions Using PCA
 
@@ -34,9 +20,7 @@ Visualizing Cryptocurrencies Results
 ### Results
 
 
-
 ### Principal Components
-
 
 ![components](./Resources/components.png)
 
@@ -73,11 +57,5 @@ The scatter plot above is generated without the PCA values and that is why it is
 
 ### Summary
 
-
-
--------------------------------------------------------------------------------------------------------------------------------------------
-
-Accountability Accounting, a prominent investment bank, is interested in offering a new cryptocurrency investment portfolio for its customers. The company, however, is lost in the vast universe of cryptocurrencies. So, they’ve asked you to create a report that includes what cryptocurrencies are on the trading market and how they could be grouped to create a classification system for this new investment.
-
-The data is not ideal, so it will need to be processed to fit the machine learning models. Since there is no known output for what you are looking for, she has decided to use unsupervised learning. To group the cryptocurrencies use the clustering algorithm. Using data visualizations to share the findings with the board.
+The best way to see the results, was represented by the 3D scatter plot that takes in the PCA values as the 3 axis, where the four different clusters can be seen. The clusters represented by the colors yellow and purple are the ones with more concentration of points. Something that has caught my attention was the class 1, represented by the big pink X on the 3D plot, the fact that it is a single point and is very far from all the other points could mean that it is an outlier, which could be skewing our data into four clusters, which could have easily been only three.. I suggest that this specific point should be investigated, possibly removed, and the results recalculated. In addition to that the other clusters should be analized using the dataframes for each class to check for patterns and relations that made them to be grouped together.
 
